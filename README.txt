@@ -1,8 +1,7 @@
 BioLink - Exportado com Sucesso!
 
-ARQUIVOS:
-• index.html - Página principal
-• assets/ - Imagens
+ARQUIVO:
+• index.html - Tudo em um único arquivo!
 
 COMO PUBLICAR NO GITHUB PAGES:
 1. Acesse github.com e crie uma conta
