@@ -104,8 +104,8 @@ button { font-family: inherit; cursor: pointer; }
 .card-image-fade { position: absolute; inset: 0; pointer-events: none; z-index: 2; }
 .card-content { flex: 1; padding: 16px; display: flex; flex-direction: column; justify-content: center; min-width: 0; }
 .card-content.full-width { width: 100%; }
-.card-title { font-family: 'cursive', Georgia, serif; font-size: 14px; font-weight: 600; margin-bottom: 4px; }
-.card-desc { font-size: 12px; color: #AD903C; margin-bottom: 12px; white-space: pre-wrap; word-break: break-word; }
+.card-title { margin-bottom: 4px; }
+.card-desc { color: #AD903C; margin-bottom: 12px; white-space: pre-wrap; word-break: break-word; }
 .card-button { display: inline-flex; align-items: center; justify-content: center; padding: 10px 20px; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; text-align: center; transition: all 0.2s ease; border: none; flex-shrink: 0; align-self: flex-start; }
 .card-button:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
 
@@ -121,7 +121,7 @@ button { font-family: inherit; cursor: pointer; }
 
 .faq-accordion { margin: 16px 12px; }
 .faq-item { transition: all 0.2s ease; }
-.faq-question { width: 100%; padding: 16px; background: none; border: none; font-family: 'cursive', Georgia, serif; font-size: 14px; font-weight: 600; text-align: left; display: flex; justify-content: space-between; align-items: center; gap: 12px; transition: color 0.2s ease; cursor: pointer; }
+.faq-question { width: 100%; padding: 16px; background: none; border: none; font-size: 14px; font-weight: 600; display: flex; justify-content: space-between; align-items: center; gap: 12px; transition: color 0.2s ease; cursor: pointer; }
 .faq-question:hover { opacity: 0.8; }
 .faq-icon { font-size: 20px; font-weight: 300; transition: transform 0.3s ease; flex-shrink: 0; }
 .faq-item.open .faq-icon { transform: rotate(45deg); }
@@ -171,7 +171,8 @@ button { font-family: inherit; cursor: pointer; }
     </div></div>
 <div class="animate-block" data-block-type="CardSplit">
     <div class="card-split-wrapper" style="position: relative; width: 100%; margin: 12px auto; overflow: visible;">
-      <div class="card-split card-imageRight" style="background: linear-gradient(to right, #121212, #121212, #474747);  border-radius: 16px; box-shadow: 0 8px 24px rgba(0,0,0,0.2); min-height: 170px; position: relative;">
+      
+      <div class="card-split card-imageRight" style="background: linear-gradient(to right, #121212, #121212, #474747);  border-radius: 16px; box-shadow: 0 8px 24px rgba(0,0,0,0.2); min-height: 170px; position: relative; border: 2px solid #ffffff; overflow: hidden;">
         
         
           <div class="card-image-wrapper lazy-img-wrapper">
@@ -186,10 +187,12 @@ button { font-family: inherit; cursor: pointer; }
         </div>
       </div>
       
+      
     </div></div>
 <div class="animate-block" data-block-type="CardSplit">
     <div class="card-split-wrapper" style="position: relative; width: 100%; margin: 12px auto; overflow: visible;">
-      <div class="card-split card-imageLeft" style="background: linear-gradient(to right, #121212, #121212, #474747);  border-radius: 16px; box-shadow: 0 8px 24px rgba(0,0,0,0.2); min-height: 170px; position: relative;">
+      <div style="background: linear-gradient(to right, #5c2103, #b28150, #fefca5, #763e1a); border-radius: 16px; padding: 2px; overflow: hidden;">
+      <div class="card-split card-imageLeft" style="background: linear-gradient(to right, #121212, #121212, #474747);  border-radius: 14px; box-shadow: 0 8px 24px rgba(0,0,0,0.2); min-height: 170px; position: relative;  overflow: hidden;">
         
         
           <div class="card-image-wrapper lazy-img-wrapper">
@@ -203,11 +206,13 @@ button { font-family: inherit; cursor: pointer; }
           <a href="https://example.com" class="card-button" style="background: linear-gradient(to bottom right, #ad903c, #fef5b9, #b09441);  color: #000000; border-radius: 28px; width: fit-content; max-width: 100%;  font-family: sans-serif, sans-serif; font-weight: 600; font-style: normal; font-size: 12px; text-decoration: none; text-transform: none; box-shadow: 0px 4px 8px #0000002d;" target="_blank" rel="noopener noreferrer">SAIBA MAIS</a>
         </div>
       </div>
+      </div>
       
     </div></div>
 <div class="animate-block" data-block-type="CardSplit">
     <div class="card-split-wrapper" style="position: relative; width: 100%; margin: 12px auto; overflow: visible;">
-      <div class="card-split card-imageLeft" style="background: linear-gradient(to right, #121212, #121212, #474747);  border-radius: 16px; box-shadow: 0 8px 24px rgba(0,0,0,0.2); min-height: 170px; position: relative;">
+      <div style="background: linear-gradient(to right, #5c2103, #b28150, #fefca5, #763e1a); border-radius: 16px; padding: 2px; overflow: hidden;">
+      <div class="card-split card-imageLeft" style="background: linear-gradient(to right, #121212, #121212, #474747);  border-radius: 14px; box-shadow: 0 8px 24px rgba(0,0,0,0.2); min-height: 170px; position: relative;  overflow: hidden;">
         
         
           <div class="card-image-wrapper lazy-img-wrapper">
@@ -220,6 +225,7 @@ button { font-family: inherit; cursor: pointer; }
            <p class="card-desc" style="font-family: sans-serif, sans-serif; font-weight: 400; font-style: normal; font-size: 0.875rem; text-decoration: none; text-transform: none; color: #FFFFFF; text-align: left;">Horários abertos..</p>
           <a href="https://example.com" class="card-button" style="background: linear-gradient(to bottom right, #ad903c, #fef5b9, #b09441);  color: #000000; border-radius: 28px; width: fit-content; max-width: 100%;  font-family: sans-serif, sans-serif; font-weight: 600; font-style: normal; font-size: 12px; text-decoration: none; text-transform: none; box-shadow: 0px 4px 8px #0000002d;" target="_blank" rel="noopener noreferrer">SAIBA MAIS</a>
         </div>
+      </div>
       </div>
       
     </div></div>
